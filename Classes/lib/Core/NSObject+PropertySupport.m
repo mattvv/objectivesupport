@@ -49,7 +49,7 @@
 		}
 		
 		free(propList);
-		currentClass = [currentClass superclass];
+		currentClass = nil; // [currentClass superclass]; Superclass support is broken on iOS > 4.0
 	}
 	return propertyNames;
 }
